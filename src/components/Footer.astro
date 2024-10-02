@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section id="somos" class="bg-[#ffb2e2] -mt-[1px]">
+    <div
+        class="rounded-t-2xl md:rounded-t-3xl h-[70vh] w-screen flex flex-col items-left py-12 px-12 relative bg-[#004932] gap-5 justify-between"
+    >
+        <div class="flex flex-col items-center justify-center">
+            <img src="voluIconFooter.png" alt="Logo" class="w-[60%]" />
+        </div>
+
+        <div
+            class="flex md:flex-row flex-col md:justify-between justify- items-center md:items-end"
+        >
+            <div class="md:w-1/3 w-full flex flex-col md:gap-4 gap-6">
+                <p class="text-white text-2xl md:text-base">
+                    Suscríbete para recibir actualizaciones de nuestra app y de
+                    proyectos que se propongan
+                </p>
+                <div class="w-full flex gap-[2px]">
+                    <input
+                        type="text"
+                        placeholder="Correo electrónico"
+                        class="px-4 py-2 flex-grow rounded-s-md"
+                    />
+                    <button class="bg-[#ffb2e2] rounded-e-md px-4 py-2"
+                        >></button
+                    >
+                </div>
+            </div>
+
+            <div class="flex justify-end items-end gap-2 mt-5 md:mt-0">
+                <Icon name={"mdi:github"} color={"#D7FF3C"} class="w-6 h-6" />
+                <Icon
+                    name={"mdi:instagram"}
+                    color={"#D7FF3C"}
+                    class="w-6 h-6"
+                />
+                <Icon name={"mdi:youtube"} color={"#D7FF3C"} class="w-6 h-6" />
+                <Icon name={"mdi:linkedin"} color={"#D7FF3C"} class="w-6 h-6" />
+            </div>
+        </div>
+    </div>
+</section>

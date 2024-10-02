@@ -6,9 +6,11 @@ import Conocenos from "../sections/Conocenos.astro";
 import ComoFunciona from "../sections/ComoFunciona.astro";
 import NuestraMision from "../sections/NuestraMision.astro";
 import QuienesSomos from "../sections/QuienesSomos.astro";
+import DownloadApp from "../sections/DownloadApp.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Volu-App">
     <NavBar />
     <main>
         <Hero />
@@ -19,7 +21,9 @@ import QuienesSomos from "../sections/QuienesSomos.astro";
             class="md:w-screen md:h-screen -mt-[1px]"
         />
         <ComoFunciona />
-        <!-- <NuestraMision /> -->
+        <NuestraMision />
         <!-- <QuienesSomos /> -->
+        <DownloadApp />
+        <Footer />
     </main>
 </Layout>

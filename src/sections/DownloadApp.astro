@@ -1,0 +1,35 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section
+    id="conocer"
+    class="h-screen w-screen flex flex-col relative py-10 bg-[#FFB2E2] overflow-x-hidden"
+>
+    <h3
+        class="md:w-1/2 w-full md:text-5xl text-3xl text-[#004932] font-bold px-16"
+    >
+        Impulsa un cambio positivo en el mundo participando en proyectos
+        sociales.
+    </h3>
+    <div class="flex justify-center items-center h-full gap-1 flex-col">
+        <div
+            class="border-[18px] bg-[#FFB2E2] border-[#FFB2E2] rounded-[38px] z-10 gap-3"
+        >
+            <div class="px-3 py-3 rounded-[38px] bg-[#D7FF3C]">
+                <img src="voluIcon.png" alt="Logo" class="w-28 h-28" />
+            </div>
+        </div>
+        <button
+            class="bg-[#D7FF3C] py-3 px-5 rounded-[64px] text-[#1E1E1E] z-10 flex gap-2 items-center font-semibold"
+        >
+            <Icon name="mdi:download" />
+            Descárgate la app</button
+        >
+    </div>
+    <img
+        src="/greenSlash.png"
+        alt="Green Slash"
+        class="absolute w-[300vw] md:w-screen md:bottom-20 bottom-52 max-w-none"
+    />
+</section>

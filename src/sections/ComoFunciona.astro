@@ -1,6 +1,8 @@
 ---
+import { Icon } from "astro-icon/components";
+
 const customClass =
-    "rounded-lg transition duration-300 flex items-center justify-center md:text-xl text-base hover:-translate-y-2";
+    "rounded-lg transition duration-300 flex flex-col items-center justify-center md:text-xl text-base hover:-translate-y-2 relative";
 ---
 
 <section class="md:p-24 p-5 pt-10 w-screen h-screen flex flex-col gap-8">
@@ -10,31 +12,49 @@ const customClass =
             <h5 class="text-[#1E1E1E] w-[80%]">
                 Inscribe tu ONG y crea un perfil.
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" />
+            </button>
         </div>
         <div class={`${customClass} bg-[#d7ff3c] row-span-4 `}>
             <h5 class="text-[#004932] w-[80%]">
                 Colabora directamente con voluntarios cualificados online.
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" />
+            </button>
         </div>
         <div class={`${customClass} bg-[#ffb2e2] row-span-3 `}>
             <h5 class="text-[#1E1E1E] w-[80%]">
                 Busca proyectos que coincidan con tus habilidades.
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" />
+            </button>
         </div>
         <div class={`${customClass} bg-[#004932] row-span-4 `}>
             <h5 class="text-white w-[80%]">
                 Publica tus necesidades y encuentra apoyo especializado.
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" class="text-white" />
+            </button>
         </div>
         <div class={`${customClass} bg-[#004932] row-span-4 `}>
             <h5 class="text-white w-[80%]">
                 Apoya causas sociales y gana experiencia práctica.
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" class="text-white" />
+            </button>
         </div>
         <div class={`${customClass} bg-[#ffb2e2] row-span-3  `}>
             <h5 class="text-[#1E1E1E] w-[80%]">
                 Regístrate para ofrecer tu talento
             </h5>
+            <button class="rounded-full md:p-4 p-2 absolute bottom-0 right-0">
+                <Icon name="mdi:keyboard-arrow-right" />
+            </button>
         </div>
     </div>
 </section>
