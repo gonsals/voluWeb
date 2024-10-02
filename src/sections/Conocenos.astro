@@ -1,23 +1,35 @@
 <section
     id="conocer"
-    class="h-screen w-screen bg-[#004932] p-[88px] flex items-center justify-center"
+    class="h-screen bg-[#004932] md:p-[88px] py-14 px-5 flex items-center justify-center"
 >
-    <div class="flex flex-row items-center justify-between gap-28">
-        <div class="w-1/2">
-            <h2 class="text-7xl font-bold text-[#ffb2e2]">CONÓCENOS</h2>
-            <p class="mt-4 text-lg text-white">
+    <div
+        class="flex md:flex-row flex-col items-center justify-between md:gap-24 gap-5"
+    >
+        <div class="md:w-2/3 w-[90%] z-10">
+            <h2
+                class="md:text-7xl md:text-left text-center text-3xl font-bold text-[#ffb2e2]"
+            >
+                Conócenos
+            </h2>
+            <p class="mt-4 md:text-lg text-sm text-white">
                 Estamos desarrollando una plataforma innovadora para conectar
                 voluntarios cualificados en áreas como marketing, diseño
                 gráfico, programación y mucho más, con ONGs que necesitan apoyo
                 para sus misiones.
             </p>
-            <p class="mt-4 text-lg text-white">
+            <p class="mt-4 md:text-lg text-sm text-white">
                 Volu ofrece una manera simple, gratuita y eficaz de fortalecer
                 proyectos sociales y promover el impacto positivo en el mundo.
             </p>
         </div>
-        <div class="w-1/2 flex justify-center">
-            <img src="/standing-iphone.png" alt="Standing Iphone" />
+
+        <!-- Ajustamos la imagen para que se comporte correctamente en pantallas pequeñas y grandes -->
+        <div class="md:w-1/2 w-full flex justify-center">
+            <img
+                src="/standing-iphone.png"
+                alt="Standing Iphone"
+                class="w-auto max-h-[50vh] md:max-h-[100%] object-contain"
+            />
         </div>
     </div>
 </section>

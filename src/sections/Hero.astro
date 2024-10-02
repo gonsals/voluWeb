@@ -2,21 +2,35 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<section class="h-screen flex items-center justify-center px-32">
-    <img src="knot.svg" alt="knot" class="absolute -z-10" />
-    <div class="flex flex-row items-end justify-center">
-        <div class="w-1/2">
-            <h1 class="text-black text-6xl font-bold uppercase">
+<section
+    class="h-screen w-screen flex items-center justify-center md:px-32 px-3 overflow-hidden relative"
+>
+    <img
+        src="knot.svg"
+        alt="knot"
+        class="absolute -z-10 md:w-full md:h-full md:object-cover h-auto w-[200vw] max-w-none left-[0.2%]"
+    />
+    <div
+        class="flex flex-col md:flex-row md:items-center items-center h-full justify-center md:gap-0 gap-3"
+    >
+        <div class="md:w-1/2 w-full md:h-1/2 px-4">
+            <h1
+                class="text-black md:text-6xl text-4xl font-bold uppercase text-left md:text-left"
+            >
                 Hazte Voluntario y Transforma tu Talento Misión Social!
             </h1>
         </div>
-        <div class="w-1/2 flex h-full justify-end align-bottom">
-            <div class="w-3/5 flex items-end flex-col gap-2">
-                <h4 class="text-right text-black text-xl">
+        <div
+            class="md:w-1/2 w-full md:h-1/2 flex items-end justify-end align-bottom"
+        >
+            <div
+                class="md:w-3/5 w-full flex items-end flex-col md:gap-2 gap-0 px-4"
+            >
+                <h4 class="md:text-right text-black md:text-xl text-lg">
                     Volu conecta voluntarios digitales con ONGs para impulsar
                     proyectos y ampliar su impacto.
                 </h4>
-                <button class="bg-[#ffb2e1] rounded-full p-2">
+                <button class="bg-[#ffb2e1] rounded-full md:p-4 p-2">
                     <Icon name="mdi:arrow-down" />
                 </button>
             </div>

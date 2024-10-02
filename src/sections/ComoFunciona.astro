@@ -1,68 +1,40 @@
-<div class="masonry p-32">
-    <div class="item item1">Inscribe tu ONG y crea un perfil.</div>
-    <div class="item item2">
-        Colabora directamente con voluntarios cualificados online.
-    </div>
-    <div class="item item3">
-        Busca proyectos que coincidan con tus habilidades.
-    </div>
-    <div class="item item4">
-        Publica tus necesidades y encuentra apoyo especializado.
-    </div>
-    <div class="item item5">
-        Apoya causas sociales y gana experiencia práctica.
-    </div>
-    <div class="item item6">Regístrate para ofrecer tu talento</div>
-</div>
+---
+const customClass =
+    "rounded-lg transition duration-300 flex items-center justify-center md:text-xl text-base hover:-translate-y-2";
+---
 
-<style>
-    .masonry {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 5px;
-        gap: 20px;
-    }
-
-    .item {
-        padding: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        transition: transform 0.3s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2em;
-    }
-
-    .item:hover {
-        transform: translateY(-10px);
-    }
-
-    .item1 {
-        grid-row: span 10;
-        background-color: #ffb2e2;
-    }
-    .item2 {
-        grid-row: span 15;
-        background-color: #d7ff3c;
-        color: #004932;
-    }
-    .item3 {
-        grid-row: span 10;
-        background-color: #ffb2e2;
-    }
-    .item4 {
-        grid-row: span 15;
-        background-color: #004932;
-        color: white;
-    }
-    .item5 {
-        grid-row: span 15;
-        background-color: #004932;
-        color: white;
-    }
-    .item6 {
-        grid-row: span 10;
-        background-color: #ffb2e2;
-    }
-</style>
+<section class="md:p-24 p-5 pt-10 w-screen h-screen flex flex-col gap-8">
+    <h1 class="text-center md:text-6xl text-3xl font-bold">Cómo funciona</h1>
+    <div class="grid md:grid-cols-3 gap-4 grid-cols-2 w-full h-full">
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3 `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">
+                Inscribe tu ONG y crea un perfil.
+            </h5>
+        </div>
+        <div class={`${customClass} bg-[#d7ff3c] row-span-4 `}>
+            <h5 class="text-[#004932] w-[80%]">
+                Colabora directamente con voluntarios cualificados online.
+            </h5>
+        </div>
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3 `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">
+                Busca proyectos que coincidan con tus habilidades.
+            </h5>
+        </div>
+        <div class={`${customClass} bg-[#004932] row-span-4 `}>
+            <h5 class="text-white w-[80%]">
+                Publica tus necesidades y encuentra apoyo especializado.
+            </h5>
+        </div>
+        <div class={`${customClass} bg-[#004932] row-span-4 `}>
+            <h5 class="text-white w-[80%]">
+                Apoya causas sociales y gana experiencia práctica.
+            </h5>
+        </div>
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3  `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">
+                Regístrate para ofrecer tu talento
+            </h5>
+        </div>
+    </div>
+</section>

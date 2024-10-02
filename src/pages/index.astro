@@ -5,6 +5,7 @@ import Hero from "../sections/Hero.astro";
 import Conocenos from "../sections/Conocenos.astro";
 import ComoFunciona from "../sections/ComoFunciona.astro";
 import NuestraMision from "../sections/NuestraMision.astro";
+import QuienesSomos from "../sections/QuienesSomos.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,27 +13,13 @@ import NuestraMision from "../sections/NuestraMision.astro";
     <main>
         <Hero />
         <Conocenos />
-        <img src="heroImage.png" alt="Hero Image" class="w-screen h-screen -mt-1" />
+        <img
+            src="heroImage.png"
+            alt="Hero Image"
+            class="md:w-screen md:h-screen -mt-[1px]"
+        />
         <ComoFunciona />
-        <NuestraMision />
-        <section
-            id="quien-somos"
-            class="min-h-screen bg-white flex items-center justify-center"
-        >
-            <div>
-                <h2 class="text-3xl font-bold text-green-700">Quién somos</h2>
-                <p class="mt-4 text-lg">Contenido sobre quién somos...</p>
-            </div>
-        </section>
-
-        <section
-            id="contact"
-            class="min-h-screen bg-gray-100 flex items-center justify-center"
-        >
-            <div>
-                <h2 class="text-3xl font-bold text-green-700">Contacto</h2>
-                <p class="mt-4 text-lg">Contenido de contacto...</p>
-            </div>
-        </section>
+        <!-- <NuestraMision /> -->
+        <!-- <QuienesSomos /> -->
     </main>
 </Layout>

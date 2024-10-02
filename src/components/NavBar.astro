@@ -1,41 +1,120 @@
-<nav class="w-full flex justify-center items-center absolute px-32">
-    <div class="w-full max-w-7xl grid grid-cols-3 items-center">
-        <ul class="flex space-x-8 items-center">
+<nav class="w-full flex justify-center items-center md:px-32 px-2 absolute">
+    <div class="w-full grid md:grid-cols-3 grid-cols-2 items-center">
+        <!-- Menú de navegación -->
+        <ul class="hidden md:flex space-x-8 items-center">
             <li>
                 <a
                     href="#conocer"
                     class="text-[#004932] font-semibold hover:text-green-900"
+                    >conocer</a
                 >
-                    conocer
-                </a>
             </li>
             <li>
                 <a
                     href="#quien-somos"
                     class="text-[#004932] font-semibold hover:text-green-900"
+                    >quién somos</a
                 >
-                    quién somos
-                </a>
             </li>
             <li>
                 <a
                     href="#contact"
                     class="text-[#004932] font-semibold hover:text-green-900"
+                    >contact</a
                 >
-                    contact
-                </a>
             </li>
         </ul>
 
-        <div class="flex-grow flex justify-center">
+        <div class="flex-grow flex md:justify-center">
             <img src="/voluIcon.png" alt="Logo" class="h-32" />
         </div>
-        <div class="flex justify-end">
+
+        <div class="hidden md:flex justify-end">
             <button
-                class="px-4 py-3 bg-[#FFB2E2] rounded-2xl font-bold text-lg w-fit h-fit"
+                class="md:px-4 px-2 md:py-3 py-2 bg-[#FFB2E2] rounded-2xl font-bold md:text-lg text-sm w-fit h-fit"
             >
                 Hazte voluntario
             </button>
         </div>
+
+        <!-- Menú Hamburger para pantallas pequeñas -->
+        <div class="md:hidden flex justify-end mr-2">
+            <button
+                id="hamburger-btn"
+                class="text-[#004932] focus:outline-none"
+            >
+                <!-- Icono de hamburguesa -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </div>
+
+    <!-- Menú desplegable para pantallas pequeñas -->
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-24 left-0 w-full bg-white shadow-md p-4"
+    >
+        <ul class="flex flex-col items-center space-y-4">
+            <li>
+                <a
+                    href="#conocer"
+                    class="text-[#004932] font-semibold hover:text-green-900"
+                    >conocer</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#quien-somos"
+                    class="text-[#004932] font-semibold hover:text-green-900"
+                    >quién somos</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#contact"
+                    class="text-[#004932] font-semibold hover:text-green-900"
+                    >contact</a
+                >
+            </li>
+            <li>
+                <button
+                    class="md:px-4 px-2 md:py-3 py-2 bg-[#FFB2E2] rounded-2xl font-bold md:text-lg text-sm w-fit h-fit"
+                >
+                    Hazte voluntario
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        #mobile-menu {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // Mostrar y ocultar el menú móvil
+        const btn = document.getElementById("hamburger-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn!.addEventListener("click", () => {
+            if (menu!.style.display === "none" || menu!.style.display === "") {
+                menu!.style.display = "block";
+            } else {
+                menu!.style.display = "none";
+            }
+        });
+    </script>
 </nav>
