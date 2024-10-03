@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import "@fontsource-variable/space-grotesk";
 ---
 
 <!doctype html>
@@ -22,6 +24,11 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+    * {
+        box-sizing: border-box;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
     ::-webkit-scrollbar {
         width: 10px;
     }
