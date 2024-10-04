@@ -19,7 +19,7 @@ Volu nace con la misión de cerrar la brecha entre jóvenes sin experiencia labo
 
 Este proyecto fue desarrollado por un equipo comprometido con la creación de oportunidades para jóvenes en transición profesional y el apoyo a organizaciones sin fines de lucro:
 
--   **[Nombre del Autor 1](https://github.com/gonsals)**
+-   **[Marc Gonzalez](https://github.com/gonsals)**
 ## Licencia
 
 Este proyecto está licenciado bajo la [Licencia MIT](https://choosealicense.com/licenses/mit/).
