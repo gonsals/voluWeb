@@ -1,54 +1,29 @@
-# Astro Starter Kit: Basics
+# Volu
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Description
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Volu es una plataforma digital que conecta a voluntarios con ONGs, ofreciendo una oportunidad única para que las personas desarrollen sus habilidades profesionales mientras apoyan causas sociales. A través de la aplicación, los usuarios pueden encontrar proyectos de voluntariado alineados con sus intereses y habilidades, trabajar remotamente y recibir reconocimiento formal por su contribución, lo cual es clave para mejorar su experiencia laboral.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Key Features
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+-   **Conexión Voluntarios-ONG:** Volu permite a las ONGs publicar oportunidades de voluntariado que los usuarios pueden explorar y solicitar según sus intereses.
+-   **Experiencia Profesional:** Los voluntarios ganan experiencia real colaborando en proyectos, lo que fortalece sus currículums y portafolios.
+-   **Certificación:** Los voluntarios reciben certificados oficiales tras completar proyectos, lo que les ayuda a destacar en el mercado laboral.
+-   **Accesible y Escalable:** La plataforma es accesible desde cualquier dispositivo, permitiendo a los usuarios conectarse desde cualquier lugar.
 
-## 🚀 Project Structure
+## Objetivo de la Aplicación
 
-Inside of your Astro project, you'll see the following folders and files:
+Volu nace con la misión de cerrar la brecha entre jóvenes sin experiencia laboral y ONGs que necesitan apoyo especializado. Ofrece una solución donde ambos actores se benefician: los voluntarios adquieren competencias profesionales mientras que las ONGs reciben el talento que necesitan para cumplir sus misiones.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Autores
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Este proyecto fue desarrollado por un equipo comprometido con la creación de oportunidades para jóvenes en transición profesional y el apoyo a organizaciones sin fines de lucro:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+-   **[Marc Gonzalez](https://github.com/gonsals)**
+## Licencia
 
-Any static assets, like images, can be placed in the `public/` directory.
+Este proyecto está licenciado bajo la [Licencia MIT](https://choosealicense.com/licenses/mit/).
 
-## 🧞 Commands
+## Contacto
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Para cualquier consulta o comentario, puedes contactarnos a través del correo: contacto@voluapp.com
