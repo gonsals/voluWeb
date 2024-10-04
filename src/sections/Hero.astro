@@ -8,12 +8,12 @@ import { Icon } from "astro-icon/components";
     <img
         src="knot.svg"
         alt="knot"
-        class="absolute -z-10 md:w-full md:h-full md:object-cover h-auto w-[200vw] max-w-none left-[0.2%]"
+        class="absolute -z-10 md:w-full md:h-full md:object-cover h-auto w-[200vw] left-1 max-w-none md:left-14"
     />
     <div
         class="flex flex-col md:flex-row md:items-center items-center h-full justify-center md:gap-0 gap-3"
     >
-        <div class="md:w-1/2 w-full md:h-1/2 px-4">
+        <div class="md:w-1/2 w-full md:h-1/2">
             <h1
                 class="text-black md:text-6xl text-4xl font-bold uppercase text-left md:text-left"
             >
@@ -24,14 +24,16 @@ import { Icon } from "astro-icon/components";
             class="md:w-1/2 w-full md:h-1/2 flex items-end justify-end align-bottom"
         >
             <div
-                class="md:w-3/5 w-full flex items-end flex-col md:gap-2 gap-0 px-4"
+                class="md:w-3/5 w-full flex items-start md:items-end flex-col gap-12 md:px-4"
             >
-                <h4 class="md:text-right text-black md:text-xl text-lg">
+                <h4
+                    class="md:text-right text-black md:text-xl text-lg pr-2 md:pr-0"
+                >
                     Volu conecta voluntarios digitales con ONGs para impulsar
                     proyectos y ampliar su impacto.
                 </h4>
                 <button
-                    class="bg-[#ffb2e1] rounded-full md:p-4 p-2 transform hover:scale-110 transition-all"
+                    class="bg-[#ffb2e1] rounded-full md:p-4 p-2 transform hover:scale-110 transition-all animate-bounce"
                 >
                     <Icon name="mdi:arrow-down" />
                 </button>
