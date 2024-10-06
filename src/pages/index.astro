@@ -8,20 +8,22 @@ import NuestraMision from "../sections/NuestraMision.astro";
 import QuienesSomos from "../sections/QuienesSomos.astro";
 import DownloadApp from "../sections/DownloadApp.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import heroImage from "../images/heroImage.png";
 ---
 
 <Layout title="Volu-App">
     <NavBar />
-        <Hero />
-        <Conocenos />
-        <img
-            src="heroImage.png"
-            alt="Hero Image"
-            class="md:w-screen md:h-screen -mt-[1px]"
-        />
-        <ComoFunciona />
-        <NuestraMision />
-        <QuienesSomos />
-        <DownloadApp />
-        <Footer />
+    <Hero />
+    <Conocenos />
+    <Image
+        src={heroImage}
+        alt="Hero Image"
+        class="md:w-screen md:h-screen -mt-[1px]"
+    />
+    <ComoFunciona />
+    <NuestraMision />
+    <QuienesSomos />
+    <DownloadApp />
+    <Footer />
 </Layout>

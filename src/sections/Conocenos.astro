@@ -1,5 +1,10 @@
+---
+import { Image } from "astro:assets";
+import phoneVolu from "../images/phoneVolu.png";
+---
+
 <section
-    id="conocer"
+    id="conocenos"
     class="h-screen w-screen bg-[#004932] md:p-[88px] py-14 px-5 flex items-center justify-center"
 >
     <div
@@ -25,8 +30,8 @@
 
         <!-- Ajustamos la imagen para que se comporte correctamente en pantallas pequeñas y grandes -->
         <div class="md:w-1/2 w-full flex justify-center">
-            <img
-                src="/phoneVolu.png"
+            <Image
+                src={phoneVolu}
                 alt="Standing Iphone"
                 class="w-auto max-h-[50vh] md:max-h-[70vh] object-contain"
             />

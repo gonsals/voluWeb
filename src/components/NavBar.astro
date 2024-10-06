@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import voluIcon from "../images/voluIcon.png";
+---
+
 <nav
     class="w-full flex justify-center items-center md:px-32 px-2 absolute z-30"
 >
@@ -6,42 +11,50 @@
         <ul class="hidden md:flex space-x-8 items-center">
             <li>
                 <a
-                    href="#conocer"
+                    href="#conocenos"
                     class="text-[#004932] font-semibold hover:text-green-900"
-                    >Conocer</a
+                    >Conocenos</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#como-funciona"
+                    class="text-[#004932] font-semibold hover:text-green-900"
+                    >Funciona</a
                 >
             </li>
             <li>
                 <a
                     href="#quien-somos"
                     class="text-[#004932] font-semibold hover:text-green-900"
-                    >Quién somos</a
+                    >Nosotros</a
                 >
             </li>
             <li>
                 <a
                     href="#contact"
                     class="text-[#004932] font-semibold hover:text-green-900"
-                    >Contact</a
+                    >App</a
                 >
             </li>
         </ul>
 
         <div class="flex-grow flex md:justify-center">
-            <img
-                src="/voluIcon.png"
+            <Image
+                src={voluIcon}
                 alt="Logo"
-                class="h-32 cursor-pointer"
+                class="h-28 w-28 cursor-pointer"
                 onclick="location.href='/'"
             />
         </div>
 
         <div class="hidden md:flex justify-end">
-            <button
+            <a
+                href="#descarga-app"
                 class="md:px-4 px-2 md:py-3 py-2 bg-[#FFB2E2] rounded-2xl font-bold md:text-lg text-sm w-fit h-fit"
             >
                 Hazte voluntario
-            </button>
+            </a>
         </div>
 
         <!-- Menú Hamburger para pantallas pequeñas -->

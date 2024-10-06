@@ -1,121 +1,131 @@
-<section
-    id="somos"
-    class="w-screen min-h-screen flex flex-col items-center relative"
->
-    <!-- Sección del texto y el slash rosa -->
-    <div class="w-full h-full overflow-x-hidden relative">
-        <img
-            src="/pinkSlash.png"
-            alt="Pink Slash"
-            class="md:w-full w-[200vw] max-w-none h-fit absolute top-0 z-10 -translate-x-1/4 md:translate-x-0"
-        />
+---
+import { Image } from "astro:assets";
+import whiteSlash from "../images/whiteSlash.png";
+import pinkSlash from "../images/pinkSlash.png";
+import placeholder from "../images/200x300.png";
+import purpleSlashMarketing from "../images/purpleSlashMarketing.png";
+import orangeSlashDiseño from "../images/orangeSlashDiseño.png";
+---
 
-        <div
-            class="flex justify-center flex-col text-center gap-4 relative z-20 transform md:translate-y-[400%] translate-y-[150%] px-5 mb-56"
+<section
+    id="quien-somos"
+    class="w-screen min-h-screen flex flex-col items-center relative overflow-y-hidden md:overflow-x-auto overflow-x-hidden"
+>
+    <Image
+        src={pinkSlash}
+        alt="Pink Slash"
+        class="md:w-full w-[200vw] max-w-none h-fit absolute top-0 z-10 md:translate-x-0"
+    />
+
+    <div
+        class="flex justify-center flex-col text-center gap-4 relative z-20 transform md:translate-y-[280%] translate-y-[150%] px-5 mb-40"
+    >
+        <h4
+            class="text-center md:text-6xl text-2xl text-[#004932] font-semibold"
         >
-            <h4
-                class="text-center md:text-6xl text-2xl text-[#004932] font-semibold"
-            >
-                Quiénes Somos
-            </h4>
-            <p class="md:text-2xl text-base text-center">
-                Somos un equipo multidisciplinar formado por tres departamentos.
-            </p>
-        </div>
+            Quiénes Somos
+        </h4>
+        <p class="md:text-2xl text-base text-center">
+            Somos un equipo multidisciplinar formado por tres departamentos.
+        </p>
     </div>
 
     <!-- diseño 4 fotos -->
     <div
         class="relative w-full h-full flex flex-col items-center md:mt-52 -mt-10 overflow-x-hidden"
     >
-        <img
-            src="/orangeSlashDiseño.png"
+        <Image
+            src={orangeSlashDiseño}
             alt="Orange Slash"
             class="absolute md:w-full z-10 -top-[6%] h-auto max-w-none w-[200vw] overflow-x-hidden"
         />
         <div
             class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[15%] w-full md:px-0 px-5"
         >
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
                 class="w-full object-cover rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
                 class="w-full object-cover rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
                 class="w-full object-cover rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
-                alt=""
-                class="w-full object-cover"
-            />
+            <Image src={placeholder} alt="" class="w-full object-cover" />
         </div>
-        <img
-            src="whiteSlash.png"
+        <Image
+            src={whiteSlash}
             alt="White Slash"
             class="w-fullabsolute transform translate-y-[-50%]"
         />
     </div>
     <!-- diseño 3 fotos -->
     <div
-        class="relative w-full h-full flex flex-col items-center -mt-[50%] overflow-x-hidden"
+        class="relative w-full h-full flex flex-col items-center md:-mt-[50%] -mt-[43%] overflow-x-hidden"
     >
-        <img
-            src="/purpleSlashMarketing.png"
+        <Image
+            src={purpleSlashMarketing}
             alt="Purple Slash Marketing"
             class="absolute md:w-full z-10 md:-top-[4%] -top-[10%] h-auto max-w-none w-[200vw]"
         />
         <div
             class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[15%] w-full md:px-0 px-5"
         >
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
-                class="w-full object-cover rounded-md"
+                class="w-full max-w-xs rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
-                class="w-full object-cover rounded-md"
+                class="w-full max-w-xs rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
-                class="w-full object-cover"
+                class="w-full max-w-xs rounded-md"
             />
         </div>
-        <img
-            src="whiteSlash.png"
+        <Image
+            src={whiteSlash}
             alt="White Slash"
-            class="w-fullabsolute transform translate-y-[-50%]"
+            class="transform translate-y-[-53%]"
         />
     </div>
     <!-- diseño 2 fotos -->
-    <!-- <div class="relative w-full h-full flex flex-col items-center -mt-[50%]">
-        <img
-            src="/orangeSlashDiseño.png"
+    <div
+        class="relative w-full md:max-h-[80vh] max-h-[50vh] flex flex-col items-center md:-mt-[50%] overflow-x-hidden overflow-y-hidden -mt-[40%]"
+    >
+        <Image
+            src={orangeSlashDiseño}
             alt="Orange Slash"
-            class="absolute md:w-full z-10 -top-[10%] h-auto max-w-none w-[200vw]"
+            class="absolute md:w-full z-10 md:-top-[17%] -top-[27%] h-auto max-w-none w-[200vw]"
         />
         <div
-            class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[15%] w-full md:px-0 px-5"
+            class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[7%] w-full md:px-0 px-5"
         >
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
-                class="w-full object-cover rounded-md"
+                class="w-full max-w-xs rounded-md"
             />
-            <img
-                src="https://place-hold.it/200x300"
+            <Image
+                src={placeholder}
                 alt=""
-                class="w-full object-cover rounded-md"
+                class="w-full max-w-xs rounded-md"
             />
-        </div> -->
+        </div>
+        <Image
+            src={whiteSlash}
+            alt="White Slash"
+            class="transform translate-y-[-50%]"
+        />
+    </div>
 </section>

@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import voluIconFooter from "../images/voluIconFooter.png";
+import { Image } from "astro:assets";
 ---
 
 <section id="somos" class="bg-[#ffb2e2] -mt-[1px]">
@@ -7,7 +9,7 @@ import { Icon } from "astro-icon/components";
         class="rounded-t-2xl md:rounded-t-3xl min-h-[70vh] w-screen flex flex-col items-left py-12 px-12 relative bg-[#004932] gap-5 justify-between"
     >
         <div class="flex flex-col items-center justify-center">
-            <img src="voluIconFooter.png" alt="Logo" class="w-[60%]" />
+            <Image src={voluIconFooter} alt="Logo" class="w-[60%]" />
         </div>
 
         <div

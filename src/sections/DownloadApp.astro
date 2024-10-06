@@ -1,9 +1,12 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import greenSlash from "../images/greenSlash.png";
+import voluIcon from "../images/voluIcon.png";
 ---
 
 <section
-    id="conocer"
+    id="descarga-app"
     class="h-screen w-screen flex flex-col relative py-10 bg-[#FFB2E2] overflow-x-hidden"
 >
     <h3
@@ -17,7 +20,7 @@ import { Icon } from "astro-icon/components";
             class="border-[18px] bg-[#FFB2E2] border-[#FFB2E2] rounded-[38px] z-10 gap-3"
         >
             <div class="px-3 py-3 rounded-[38px] bg-[#D7FF3C]">
-                <img src="voluIcon.png" alt="Logo" class="w-28 h-28" />
+                <Image src={voluIcon} alt="Logo" class="w-28 h-28" />
             </div>
         </div>
         <button
@@ -27,8 +30,8 @@ import { Icon } from "astro-icon/components";
             Descárgate la app
         </button>
     </div>
-    <img
-        src="/greenSlash.png"
+    <Image
+        src={greenSlash}
         alt="Green Slash"
         class="absolute w-[300vw] md:w-screen md:bottom-20 bottom-52 max-w-none"
     />

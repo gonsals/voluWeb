@@ -1,12 +1,14 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import knot from "../images/knot.svg";
 ---
 
 <section
     class="h-screen w-screen flex items-center justify-center md:px-32 px-3 overflow-hidden relative"
 >
-    <img
-        src="knot.svg"
+    <Image
+        src={knot}
         alt="knot"
         class="absolute -z-10 md:w-full md:h-full md:object-cover h-auto w-[200vw] left-1 max-w-none md:left-14"
     />
