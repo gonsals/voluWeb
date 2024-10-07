@@ -1,0 +1,113 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+import "@fontsource-variable/space-grotesk";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Volu-App" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png+xml" href="/favicon.png" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <div class="markdown-content">
+            <slot />
+        </div>
+    </body>
+</html>
+
+<style is:global>
+    * {
+        box-sizing: border-box;
+        font-family: "Space Grotesk Variable", sans-serif;
+    }
+
+    body {
+        padding: 40px;
+    }
+
+    .markdown-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .markdown-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .markdown-content h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        color: #444;
+    }
+
+    .markdown-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .markdown-content ul {
+        margin-left: 1.5rem;
+        padding-left: 0;
+        list-style-type: disc;
+    }
+
+    .markdown-content li {
+        margin-bottom: 0.5rem;
+        color: #666;
+    }
+
+    .markdown-content a {
+        color: #0077cc;
+        text-decoration: none;
+    }
+
+    .markdown-content a:hover {
+        text-decoration: underline;
+    }
+
+    .markdown-content hr {
+        margin: 2rem 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+    .markdown-content blockquote {
+        border-left: 4px solid #0077cc;
+        padding-left: 1rem;
+        color: #555;
+        font-style: italic;
+    }
+
+    .markdown-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .markdown-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+
+    .markdown-content table th,
+    .markdown-content table td {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+</style>
