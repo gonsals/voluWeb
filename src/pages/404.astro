@@ -1,1 +1,31 @@
-<h1>404</h1>
+---
+const customClass =
+    "rounded-lg transition duration-300 flex flex-col items-center justify-center md:text-xl text-base hover:-translate-y-2 relative";
+---
+
+<section
+    class="md:p-24 p-5 pt-10 w-screen h-screen flex flex-col gap-8"
+    id="como-funciona"
+>
+    <h1 class="text-center md:text-6xl text-3xl font-bold">404 - Not found</h1>
+    <div class="grid md:grid-cols-3 gap-4 grid-cols-2 w-full h-full">
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3 `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">Como funciona</h5>
+        </div>
+        <div class={`${customClass} bg-[#d7ff3c] row-span-4 `}>
+            <h5 class="text-[#004932] w-[80%] text-center">Volver</h5>
+        </div>
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3 `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">Download App</h5>
+        </div>
+        <div class={`${customClass} bg-[#004932] row-span-4 `}>
+            <h5 class="text-white w-[80%]">Quienes somos</h5>
+        </div>
+        <div class={`${customClass} bg-[#004932] row-span-4 `}>
+            <h5 class="text-white w-[80%]">Nuestra misión</h5>
+        </div>
+        <div class={`${customClass} bg-[#ffb2e2] row-span-3  `}>
+            <h5 class="text-[#1E1E1E] w-[80%]">Conocenos</h5>
+        </div>
+    </div>
+</section>
