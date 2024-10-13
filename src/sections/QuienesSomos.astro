@@ -1,31 +1,33 @@
 ---
 import { Image } from "astro:assets";
-import whiteSlash from "../images/whiteSlash.png";
 import pinkSlash from "../images/pinkSlash.png";
-import placeholder from "../images/200x300.png";
-import purpleSlashMarketing from "../images/purpleSlashMarketing.png";
-import orangeSlashDiseño from "../images/orangeSlashDiseño.png";
-import greenSlashProgra from "../images/greenSlashProgra.png";
 import sheilaDog from "../images/persons/sheilaDog.jpg";
-import andrea from "../images/persons/andreaProfile.jpg";
-import arianna from "../images/persons/Arianna Montiel.jpg";
+import andrea from "../images/persons/andrea.jpg";
 import marc from "../images/persons/meJeje.jpg";
 import sheila from "../images/persons/sheilaProfile.jpg";
+import arianna from "../images/persons/arianna.jpg";
 import anacla from "../images/persons/Ana Clara Almeida da Fonseca.jpg";
+import lorena from "../images/persons/lorena.jpg";
+import helena from "../images/persons/helena.jpg";
+import nosotrosSlashOrange1 from "../images/nosotros/nosotrosSlashOrange1.png";
+import nosotrosSlashOrange2 from "../images/nosotros/nosotrosSlashOrange2.png";
+import nosotrosSlashOrange3 from "../images/nosotros/nosotrosSlashOrange3.png";
 ---
 
 <section
     id="quien-somos"
-    class="w-screen min-h-screen flex flex-col items-center relative overflow-y-hidden md:overflow-x-auto overflow-x-hidden"
+    class="w-screen min-h-screen flex flex-col relative overflow-y-hidden md:overflow-x-auto overflow-x-hidden gap-2 pb-16"
 >
-    <Image
-        src={pinkSlash}
-        alt="Pink Slash"
-        class="md:w-full w-[200vw] max-w-none h-fit absolute top-0 z-10 md:translate-x-0"
-    />
+    <div class="flex items-center justify-center">
+        <Image
+            src={pinkSlash}
+            alt="Pink Slash"
+            class="md:w-screen w-[200vw] max-w-none h-fit top-0 z-10 md:translate-x-0 absolute"
+        />
+    </div>
 
     <div
-        class="flex justify-center flex-col text-center gap-4 relative z-20 transform md:translate-y-[280%] translate-y-[150%] px-5 mb-40"
+        class="flex justify-center flex-col text-center gap-4 z-20 px-5 mt-[30vh]"
     >
         <h4
             class="text-center md:text-6xl text-2xl text-[#004932] font-semibold"
@@ -36,91 +38,100 @@ import anacla from "../images/persons/Ana Clara Almeida da Fonseca.jpg";
             Somos un equipo multidisciplinar formado por tres departamentos.
         </p>
     </div>
-
-    <!-- diseño 4 fotos -->
-    <div
-        class="relative w-full h-full flex flex-col items-center md:mt-52 -mt-10 overflow-x-hidden"
-    >
-        <Image
-            src={orangeSlashDiseño}
-            alt="Orange Slash"
-            class="absolute md:w-full z-10 -top-[6%] h-auto max-w-none w-[200vw] overflow-x-hidden"
-        />
-        <div
-            class="md:grid-cols-4 grid grid-cols-2 gap-4 justify-center mt-[15%] max-w-screen md:px-0 px-5"
-        >
+    <div class="w-screen">
+        <div class="w-screen justify-end flex relative z-0">
             <Image
-                src={andrea}
-                alt=""
-                class="w-full h-auto object-cover rounded-md"
+                src={nosotrosSlashOrange1}
+                alt="Orange Slash 1"
+                class="w-2/3"
+            />
+            <h3
+                class="absolute top-[55%] md:left-[43%] left-[40%] text-center md:text-2xl text-[#004932] font-semibold z-20 text-sm"
+            >
+                Marketing
+            </h3>
+        </div>
+        <div class="grid grid-cols-4 gap-4 w-screen md:-mt-14 -mt-3 z-30">
+            <Image
+                src={sheila}
+                alt="Sheila"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
+            />
+            <Image
+                src={sheilaDog}
+                alt="Marcos"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
+            />
+            <Image
+                src={lorena}
+                alt="Lorena"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
+            />
+            <Image
+                src={arianna}
+                alt="Arianna"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
+            />
+        </div>
+
+        <div class="w-screen justify-center flex relative z-0 -mt-[1%]">
+            <Image
+                src={nosotrosSlashOrange2}
+                alt="Orange Slash 1"
+                class="w-2/3"
+            />
+            <h3
+                class="absolute top-[35%] md:left-[53%] left-[54%] text-center md:text-2xl text-[#004932] font-semibold z-20 text-sm"
+            >
+                Diseño
+            </h3>
+        </div>
+        <div class="grid grid-cols-3 gap-4 w-screen md:-mt-14 -mt-3 z-30">
+            <Image
+                src={helena}
+                alt="Helena"
+                class="z-20 md:h-[400px] h-[150px] object-cover object-top rounded-lg"
             />
             <Image
                 src={anacla}
-                alt=""
-                class="w-full h-auto object-cover rounded-md"
+                alt="Ana Clara"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
             />
             <Image
                 src={andrea}
-                alt=""
-                class="w-full h-auto object-cover rounded-md"
+                alt="Andrea"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
+            />
+        </div>
+
+        <div
+            class="w-screen justify-end flex relative z-0 -mt-[3%] overflow-x-hidden"
+        >
+            <Image
+                src={nosotrosSlashOrange3}
+                alt="Orange Slash 1"
+                class="w-4/5 -mr-[1%]"
+            />
+            <h3
+                class="absolute md:top-[35%] top-[25%] md:left-[45%] left-[38%] text-center md:text-2xl text-[#004932] font-semibold z-20 text-sm"
+            >
+                Programación
+            </h3>
+        </div>
+
+        <div
+            class="grid grid-cols-2 gap-4 w-screen md:-mt-14 -mt-3 z-30 justify-center justify-items-center"
+        >
+            <Image
+                src={marc}
+                alt="Marc Gonzalez Tarrio"
+                class="z-20 md:h-[400px] h-[150px] object-cover object-top rounded-lg"
             />
             <Image
-                src={andrea}
-                alt=""
-                class="w-full h-auto object-cover rounded-md"
+                src={sheilaDog}
+                alt="Juanjo"
+                class="z-20 md:h-[400px] h-[150px] object-cover rounded-lg"
             />
         </div>
-        <Image
-            src={whiteSlash}
-            alt="White Slash"
-            class="transform translate-y-[-50%]"
-        />
-    </div>
-    <!-- diseño 3 fotos -->
-    <div
-        class="relative w-full h-full flex flex-col items-center md:-mt-[50%] -mt-[43%] overflow-x-hidden"
-    >
-        <Image
-            src={purpleSlashMarketing}
-            alt="Purple Slash Marketing"
-            class="absolute md:w-full z-10 md:-top-[4%] -top-[10%] h-auto max-w-none w-[200vw]"
-        />
-        <div
-            class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[15%] w-full md:px-0 px-5"
-        >
-            <Image src={sheilaDog} alt="" class="w-full max-w-xs rounded-md" />
-            <Image src={arianna} alt="" class="w-full max-w-xs rounded-md" />
-            <Image src={sheila} alt="" class="w-full max-w-xs rounded-md" />
-        </div>
-        <Image
-            src={whiteSlash}
-            alt="White Slash"
-            class="transform translate-y-[-53%]"
-        />
-    </div>
-    <!-- diseño 2 fotos -->
-    <div
-        class="relative w-full md:max-h-[80vh] max-h-[50vh] flex flex-col items-center md:-mt-[50%] overflow-x-hidden overflow-y-hidden -mt-[40%]"
-    >
-        <Image
-            src={greenSlashProgra}
-            alt="Orange Slash"
-            class="absolute md:w-full z-10 md:-top-[17%] -top-[27%] h-auto max-w-none w-[200vw]"
-        />
-        <div
-            class="md:flex md:flex-row grid grid-cols-2 gap-4 justify-center mt-[10%] w-full md:px-0 px-5"
-        >
-            <Image src={marc} alt="" class="w-full max-w-xs rounded-md" />
-            <Image
-                src={placeholder}
-                alt=""
-                class="w-full max-w-xs rounded-md"
-            />
-        </div>
-        <Image
-            src={whiteSlash}
-            alt="White Slash"
-            class="transform translate-y-[-50%]"
-        />
     </div>
 </section>
