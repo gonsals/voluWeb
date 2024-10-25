@@ -17,22 +17,30 @@ import voluIcon from "../images/voluIcon.png";
     </h3>
     <div class="flex justify-center items-center h-full gap-1 flex-col">
         <div
-            class="border-[18px] bg-[#FFB2E2] border-[#FFB2E2] rounded-[38px] z-10 gap-3"
+            class="border-[18px] bg-[#FFB2E2] border-[#FFB2E2] rounded-[38px] z-40 gap-3"
         >
-            <div class="px-3 py-3 rounded-[38px] bg-[#D7FF3C]">
+            <div class="px-3 py-3 rounded-[38px] bg-[#D7FF3C] ">
                 <Image src={voluIcon} alt="Logo" class="w-28 h-28" />
             </div>
         </div>
-        <button
+        <div
+            class="bg-yellow-500 p-4 rounded-xl flex gap-2 items-center mb-2 -mt-1 z-20"
+        >
+            <Icon name={"mdi:alert"} color={"#1E1E1E"} class="w-6 h-6" />
+            <p>Cuidado aun esta en desarrollo</p>
+        </div>
+        <a
             class="bg-[#D7FF3C] py-3 px-5 rounded-[64px] text-[#1E1E1E] z-10 flex gap-2 items-center font-semibold transform hover:scale-110 transition-all animate-bounce-small"
+            href="/app.apk"
+            download
         >
             <Icon name="mdi:download" />
             Descárgate la app
-        </button>
+        </a>
     </div>
     <Image
         src={greenSlash}
         alt="Green Slash"
-        class="absolute w-[300vw] md:w-screen md:bottom-20 bottom-52 max-w-none"
+        class="absolute w-[300vw] md:w-screen md:bottom-20 bottom-52 max-w-none z-30"
     />
 </section>
